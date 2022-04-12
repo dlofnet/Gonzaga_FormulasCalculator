@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.PhysicsActivity">
+
+    <TextView
+        android:id="@+id/txtGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="PHYSICS"
+        android:textColor="#51AAD4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnStraight"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtGeo"
+        app:layout_constraintStart_toStartOf="@+id/txtGeo"
+        app:layout_constraintTop_toBottomOf="@+id/txtGeo"
+        app:srcCompat="@drawable/straight" />
+
+    <TextView
+        android:id="@+id/txtCylinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="MOTION ALONG A STRAIGHT LINE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnStraight"
+        app:layout_constraintStart_toStartOf="@+id/btnStraight"
+        app:layout_constraintTop_toBottomOf="@+id/btnStraight" />
+
+    <ImageView
+        android:id="@+id/btnCircular"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/txtCylinder"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/txtCylinder"
+        app:layout_constraintTop_toBottomOf="@+id/txtCylinder"
+        app:srcCompat="@drawable/circular_motion" />
+
+    <TextView
+        android:id="@+id/txtCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="CIRCULAR MOTION"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCircular"
+        app:layout_constraintStart_toStartOf="@+id/btnCircular"
+        app:layout_constraintTop_toBottomOf="@+id/btnCircular" />
+
+    <ImageView
+        android:id="@+id/btnProjectile"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/txtCircular"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/txtCircular"
+        app:layout_constraintTop_toBottomOf="@+id/txtCircular"
+        app:srcCompat="@drawable/projectile" />
+
+    <TextView
+        android:id="@+id/txtProjectile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="PROJECTILE MOTION"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnProjectile"
+        app:layout_constraintStart_toStartOf="@+id/btnProjectile"
+        app:layout_constraintTop_toBottomOf="@+id/btnProjectile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

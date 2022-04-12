@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:id="@+id/txtGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Formulas"
+        android:textColor="#51AAD4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtCalculator"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="Calculator"
+        android:textColor="#434343"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtGeo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPhysics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Physics"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCalculator"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtGeo"
+        app:layout_constraintTop_toBottomOf="@+id/txtGeo" />
+
+    <Button
+        android:id="@+id/btnChem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Chemistry"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPhysics"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/btnPhysics"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhysics" />
+
+    <Button
+        android:id="@+id/btnGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Geometry"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnChem"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnChem"
+        app:layout_constraintTop_toBottomOf="@+id/btnChem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

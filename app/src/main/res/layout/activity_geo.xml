@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.GeoActivity">
+
+    <TextView
+        android:id="@+id/txtGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gothic_a1_black"
+        android:text="GEOMETRY"
+        android:textColor="#51AAD4"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnCylinder"
+        android:layout_width="122dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnCone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGeo"
+        app:srcCompat="@drawable/cylinder" />
+
+    <TextView
+        android:id="@+id/txtCylinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="CYLINDER"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCylinder"
+        app:layout_constraintStart_toStartOf="@+id/btnCylinder"
+        app:layout_constraintTop_toBottomOf="@+id/btnCylinder" />
+
+    <ImageView
+        android:id="@+id/btnCone"
+        android:layout_width="126dp"
+        android:layout_height="114dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCylinder"
+        app:layout_constraintTop_toTopOf="@+id/btnCylinder"
+        app:srcCompat="@drawable/cone" />
+
+    <TextView
+        android:id="@+id/txtCone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="CONE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCone"
+        app:layout_constraintStart_toStartOf="@+id/btnCone"
+        app:layout_constraintTop_toBottomOf="@+id/btnCone" />
+
+    <ImageView
+        android:id="@+id/btnTorus"
+        android:layout_width="122dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCylinder"
+        app:srcCompat="@drawable/torus" />
+
+    <TextView
+        android:id="@+id/txtTorus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="TORUS"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTorus"
+        app:layout_constraintStart_toStartOf="@+id/btnTorus"
+        app:layout_constraintTop_toBottomOf="@+id/btnTorus" />
+
+    <ImageView
+        android:id="@+id/btnSphere"
+        android:layout_width="122dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnPyramid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTorus"
+        app:srcCompat="@drawable/sphere" />
+
+    <TextView
+        android:id="@+id/txtSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="SPHERE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSphere"
+        app:layout_constraintStart_toStartOf="@+id/btnSphere"
+        app:layout_constraintTop_toBottomOf="@+id/btnSphere" />
+
+    <ImageView
+        android:id="@+id/btnPyramid"
+        android:layout_width="121dp"
+        android:layout_height="115dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSphere"
+        app:layout_constraintTop_toTopOf="@+id/btnSphere"
+        app:srcCompat="@drawable/pyramid" />
+
+    <TextView
+        android:id="@+id/txtPyramid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1_regular"
+        android:text="PYRAMID"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPyramid"
+        app:layout_constraintStart_toStartOf="@+id/btnPyramid"
+        app:layout_constraintTop_toBottomOf="@+id/btnPyramid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

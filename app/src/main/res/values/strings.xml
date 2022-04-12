@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FormulasCalculator</string>
+    <string name="title_activity_physics_straight">PhysicsStraight</string>
+    <string name="change_position">position change</string>
+    <string name="velocity">velocity</string>
+    <string name="acceleration">acceleration</string>
+    <string name="title_activity_physics_circular">PhysicsCircular</string>
+    <string name="centripetal_acceleration">centripetal acceleration</string>
+    <string name="tangential_velocity">tangential velocity</string>
+    <string name="tangential_acceleration">tangential acceleration</string>
+    <string name="title_activity_physics_projectile">PhysicsProjectile</string>
+    <string name="horizontal_change">change (horizontal position)</string>
+    <string name="vertical_change">change (vertical position)</string>
+    <string name="final_vertical">final vertical velocity</string>
+</resources>
