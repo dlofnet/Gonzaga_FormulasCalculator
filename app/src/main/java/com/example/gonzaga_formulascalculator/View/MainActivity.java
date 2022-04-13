@@ -13,7 +13,7 @@ import com.example.gonzaga_formulascalculator.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnPhysics, btnChem, btnGeo;
+    Button btnPhysics, btnGeo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btnPhysics = findViewById(R.id.btnPhysics);
-        btnChem = findViewById(R.id.btnChem);
         btnGeo = findViewById(R.id.btnGeo);
 
         btnPhysics.setOnClickListener(this);
-        btnChem.setOnClickListener(this);
         btnGeo.setOnClickListener(this);
     }
 
@@ -42,13 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent i1 = new Intent(this, PhysicsActivity.class);
                 startActivity(i1);
                 break;
-            case R.id.btnChem:
-                Intent i2 = new Intent(this, ChemActivity.class);
-                startActivity(i2);
-                break;
             case R.id.btnGeo:
-                Intent i3 = new Intent(this, GeoActivity.class);
-                startActivity(i3);
+                Intent i2 = new Intent(this, GeoActivity.class);
+                startActivity(i2);
                 break;
         }
     }

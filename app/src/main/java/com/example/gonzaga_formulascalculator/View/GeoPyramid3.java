@@ -17,11 +17,11 @@ import com.example.gonzaga_formulascalculator.Model.Variables;
 import com.example.gonzaga_formulascalculator.R;
 import com.google.android.material.snackbar.Snackbar;
 
-public class PhysProjectile1 extends Fragment {
+public class GeoPyramid3 extends Fragment {
 
-    EditText physP1vx, physP1t;
-    Button btnPhysP1;
-    TextView txtPhysP1;
+    EditText geoP3l, geoP3v, geoP3h;
+    Button btnGeoP3;
+    TextView txtGeoP3;
 
     Variables var = new Variables();
     Formulas calc = new Formulas();
@@ -29,26 +29,28 @@ public class PhysProjectile1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_physics_projectile1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_geometry_pyramid3, container, false);
 
-        physP1vx = (EditText) rootView.findViewById(R.id.physP1vx);
-        physP1t = (EditText) rootView.findViewById(R.id.physP1t);
-        btnPhysP1 = (Button) rootView.findViewById(R.id.btnPhysP1);
-        txtPhysP1 = (TextView) rootView.findViewById(R.id.txtPhysP1);
+        geoP3l = (EditText) rootView.findViewById(R.id.geoP3l);
+        geoP3v = (EditText) rootView.findViewById(R.id.geoP3v);
+        geoP3h = (EditText) rootView.findViewById(R.id.geoP3h);
+        btnGeoP3 = (Button) rootView.findViewById(R.id.btnGeoP3);
+        txtGeoP3 = (TextView) rootView.findViewById(R.id.txtGeoP3);
 
-        btnPhysP1.setOnClickListener(new View.OnClickListener() {
+        btnGeoP3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                var.setVx(Double.parseDouble(physP1vx.getText().toString()));
-                var.setT(Double.parseDouble(physP1t.getText().toString()));
-                var.setAnsPhys(calc.physGetDx(var.getVx(), var.getT()));
+                var.setLength(Double.parseDouble(geoP3l.getText().toString()));
+                var.setVolume(Double.parseDouble(geoP3v.getText().toString()));
+                var.setHeight(Double.parseDouble(geoP3h.getText().toString()));
+                var.setAnsPhys(calc.pyramidBW(var.getVolume(), var.getLength(), var.getHeight()));
 
                 if (var.getAnsPhys() < 0) {
                     Snackbar snackbar = Snackbar
                             .make(rootView, "Invalid input. Please try again.", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 } else {
-                    txtPhysP1.setText("Δdₓ = " + var.getAnsPhys());
+                    txtGeoP3.setText("V = " + var.getAnsPhys());
                 }
             }
         });

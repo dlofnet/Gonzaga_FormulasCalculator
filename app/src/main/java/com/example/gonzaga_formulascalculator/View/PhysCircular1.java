@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.gonzaga_formulascalculator.Controller.Formulas;
-import com.example.gonzaga_formulascalculator.Model.PhysicsVariables;
+import com.example.gonzaga_formulascalculator.Model.Variables;
 import com.example.gonzaga_formulascalculator.R;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -23,7 +23,7 @@ public class PhysCircular1 extends Fragment {
     Button btnPhysC1;
     TextView txtPhysC1;
 
-    PhysicsVariables var = new PhysicsVariables();
+    Variables var = new Variables();
     Formulas calc = new Formulas();
 
     @Nullable

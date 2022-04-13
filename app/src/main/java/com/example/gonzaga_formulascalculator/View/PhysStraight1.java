@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.gonzaga_formulascalculator.Controller.Formulas;
-import com.example.gonzaga_formulascalculator.Model.PhysicsVariables;
+import com.example.gonzaga_formulascalculator.Model.Variables;
 import com.example.gonzaga_formulascalculator.R;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -23,7 +23,7 @@ public class PhysStraight1 extends Fragment {
     Button btnPhys1;
     TextView txtPhys1;
 
-    PhysicsVariables var = new PhysicsVariables();
+    Variables var = new Variables();
     Formulas calc = new Formulas();
 
     @Nullable
@@ -41,7 +41,7 @@ public class PhysStraight1 extends Fragment {
             public void onClick(View view) {
                 var.setX1(Double.parseDouble(phys1x1.getText().toString()));
                 var.setX2(Double.parseDouble(phys1x2.getText().toString()));
-                var.setAnsPhys(calc.physGetD(var.getX1(), var.getX2()));
+                var.setAnsPhys(calc.physGetD(var.getX2(), var.getX1()));
 
                 if (var.getAnsPhys() < 0) {
                     Snackbar snackbar = Snackbar

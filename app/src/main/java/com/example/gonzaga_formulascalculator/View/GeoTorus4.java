@@ -17,11 +17,11 @@ import com.example.gonzaga_formulascalculator.Model.Variables;
 import com.example.gonzaga_formulascalculator.R;
 import com.google.android.material.snackbar.Snackbar;
 
-public class PhysProjectile1 extends Fragment {
+public class GeoTorus4 extends Fragment {
 
-    EditText physP1vx, physP1t;
-    Button btnPhysP1;
-    TextView txtPhysP1;
+    EditText geoT4majr, geoT4a;
+    Button btnGeoT4;
+    TextView txtGeoT4;
 
     Variables var = new Variables();
     Formulas calc = new Formulas();
@@ -29,26 +29,26 @@ public class PhysProjectile1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_physics_projectile1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_geometry_torus4, container, false);
 
-        physP1vx = (EditText) rootView.findViewById(R.id.physP1vx);
-        physP1t = (EditText) rootView.findViewById(R.id.physP1t);
-        btnPhysP1 = (Button) rootView.findViewById(R.id.btnPhysP1);
-        txtPhysP1 = (TextView) rootView.findViewById(R.id.txtPhysP1);
+        geoT4majr = (EditText) rootView.findViewById(R.id.geoT4majr);
+        geoT4a = (EditText) rootView.findViewById(R.id.geoT4a);
+        btnGeoT4 = (Button) rootView.findViewById(R.id.btnGeoT4);
+        txtGeoT4 = (TextView) rootView.findViewById(R.id.txtGeoT4);
 
-        btnPhysP1.setOnClickListener(new View.OnClickListener() {
+        btnGeoT4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                var.setVx(Double.parseDouble(physP1vx.getText().toString()));
-                var.setT(Double.parseDouble(physP1t.getText().toString()));
-                var.setAnsPhys(calc.physGetDx(var.getVx(), var.getT()));
+                var.setMajR(Double.parseDouble(geoT4majr.getText().toString()));
+                var.setArea(Double.parseDouble(geoT4a.getText().toString()));
+                var.setAnsGeo(calc.torusMinR(var.getArea(), var.getMajR()));
 
-                if (var.getAnsPhys() < 0) {
+                if (var.getAnsGeo() < 0) {
                     Snackbar snackbar = Snackbar
                             .make(rootView, "Invalid input. Please try again.", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 } else {
-                    txtPhysP1.setText("Δdₓ = " + var.getAnsPhys());
+                    txtGeoT4.setText("r = " + var.getAnsGeo());
                 }
             }
         });

@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gonzaga_FormulasCalculator">
         <activity
+            android:name=".View.GeometryPyramid"
+            android:exported="false"
+            android:label="@string/title_activity_geometry_pyramid"
+            android:theme="@style/Theme.Gonzaga_FormulasCalculator.NoActionBar" />
+        <activity
+            android:name=".View.GeometryTorus"
+            android:exported="false"
+            android:label="@string/title_activity_geometry_torus"
+            android:theme="@style/Theme.Gonzaga_FormulasCalculator.NoActionBar" />
+        <activity
+            android:name=".View.GeometryCylinder"
+            android:exported="false"
+            android:label="@string/title_activity_geo_cylinder"
+            android:theme="@style/Theme.Gonzaga_FormulasCalculator.NoActionBar" />
+        <activity
             android:name=".View.PhysicsProjectile"
             android:exported="false"
             android:label="@string/title_activity_physics_projectile"

@@ -12,4 +12,18 @@
     <string name="horizontal_change">change (horizontal position)</string>
     <string name="vertical_change">change (vertical position)</string>
     <string name="final_vertical">final vertical velocity</string>
+    <string name="title_activity_geo_cylinder">GeoCylinder</string>
+    <string name="cylinder_h">height</string>
+    <string name="cylinder_v">volume</string>
+    <string name="cylinder_r">radius</string>
+    <string name="title_activity_geometry_torus">GeometryTorus</string>
+    <string name="torus_v">volume</string>
+    <string name="torus_maj">major radius</string>
+    <string name="torus_a">area</string>
+    <string name="torus_min">minor radius</string>
+    <string name="title_activity_geometry_pyramid">GeometryPyramid</string>
+    <string name="pyra_v">volume</string>
+    <string name="pyra_bl">base length</string>
+    <string name="pyra_bw">base width</string>
+    <string name="pyra_h">height</string>
 </resources>

@@ -27,8 +27,7 @@
         android:layout_height="114dp"
         android:layout_marginTop="36dp"
         android:clickable="true"
-        app:layout_constraintEnd_toStartOf="@+id/btnCone"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtGeo"
         app:srcCompat="@drawable/cylinder" />
@@ -43,28 +42,6 @@
         app:layout_constraintEnd_toEndOf="@+id/btnCylinder"
         app:layout_constraintStart_toStartOf="@+id/btnCylinder"
         app:layout_constraintTop_toBottomOf="@+id/btnCylinder" />
-
-    <ImageView
-        android:id="@+id/btnCone"
-        android:layout_width="126dp"
-        android:layout_height="114dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnCylinder"
-        app:layout_constraintTop_toTopOf="@+id/btnCylinder"
-        app:srcCompat="@drawable/cone" />
-
-    <TextView
-        android:id="@+id/txtCone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gothic_a1_regular"
-        android:text="CONE"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/btnCone"
-        app:layout_constraintStart_toStartOf="@+id/btnCone"
-        app:layout_constraintTop_toBottomOf="@+id/btnCone" />
 
     <ImageView
         android:id="@+id/btnTorus"
@@ -90,37 +67,14 @@
         app:layout_constraintTop_toBottomOf="@+id/btnTorus" />
 
     <ImageView
-        android:id="@+id/btnSphere"
-        android:layout_width="122dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="24dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toStartOf="@+id/btnPyramid"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTorus"
-        app:srcCompat="@drawable/sphere" />
-
-    <TextView
-        android:id="@+id/txtSphere"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gothic_a1_regular"
-        android:text="SPHERE"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/btnSphere"
-        app:layout_constraintStart_toStartOf="@+id/btnSphere"
-        app:layout_constraintTop_toBottomOf="@+id/btnSphere" />
-
-    <ImageView
         android:id="@+id/btnPyramid"
         android:layout_width="121dp"
         android:layout_height="115dp"
+        android:layout_marginTop="24dp"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnSphere"
-        app:layout_constraintTop_toTopOf="@+id/btnSphere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTorus"
         app:srcCompat="@drawable/pyramid" />
 
     <TextView

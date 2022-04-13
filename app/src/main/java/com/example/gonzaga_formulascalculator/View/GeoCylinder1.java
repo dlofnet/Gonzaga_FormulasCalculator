@@ -17,11 +17,11 @@ import com.example.gonzaga_formulascalculator.Model.Variables;
 import com.example.gonzaga_formulascalculator.R;
 import com.google.android.material.snackbar.Snackbar;
 
-public class PhysProjectile1 extends Fragment {
+public class GeoCylinder1 extends Fragment {
 
-    EditText physP1vx, physP1t;
-    Button btnPhysP1;
-    TextView txtPhysP1;
+    EditText geoC1v, geoC1r;
+    Button btnGeoC1;
+    TextView txtGeoC1;
 
     Variables var = new Variables();
     Formulas calc = new Formulas();
@@ -29,26 +29,26 @@ public class PhysProjectile1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_physics_projectile1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_geo_cylinder1, container, false);
 
-        physP1vx = (EditText) rootView.findViewById(R.id.physP1vx);
-        physP1t = (EditText) rootView.findViewById(R.id.physP1t);
-        btnPhysP1 = (Button) rootView.findViewById(R.id.btnPhysP1);
-        txtPhysP1 = (TextView) rootView.findViewById(R.id.txtPhysP1);
+        geoC1v = (EditText) rootView.findViewById(R.id.geoC1v);
+        geoC1r = (EditText) rootView.findViewById(R.id.geoC1r);
+        btnGeoC1 = (Button) rootView.findViewById(R.id.btnGeoC1);
+        txtGeoC1 = (TextView) rootView.findViewById(R.id.txtGeoC1);
 
-        btnPhysP1.setOnClickListener(new View.OnClickListener() {
+        btnGeoC1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                var.setVx(Double.parseDouble(physP1vx.getText().toString()));
-                var.setT(Double.parseDouble(physP1t.getText().toString()));
-                var.setAnsPhys(calc.physGetDx(var.getVx(), var.getT()));
+                var.setVolume(Double.parseDouble(geoC1v.getText().toString()));
+                var.setGeoRadius(Double.parseDouble(geoC1r.getText().toString()));
+                var.setAnsGeo(calc.cylinderH(var.getVolume(), var.getGeoRadius()));
 
-                if (var.getAnsPhys() < 0) {
+                if (var.getAnsGeo() < 0) {
                     Snackbar snackbar = Snackbar
                             .make(rootView, "Invalid input. Please try again.", Snackbar.LENGTH_LONG);
                     snackbar.show();
                 } else {
-                    txtPhysP1.setText("Δdₓ = " + var.getAnsPhys());
+                    txtGeoC1.setText("h = " + var.getAnsGeo());
                 }
             }
         });

@@ -5,11 +5,28 @@
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_chem.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_geo.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_geo_cylinder.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_geometry_pyramid.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_geometry_torus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_physics.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_physics_circular.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_physics_projectile.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/activity_physics_straight.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geo_cylinder.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geo_cylinder1.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geo_cylinder2.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geo_cylinder3.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_pyramid.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_pyramid1.xml" value="0.67" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_pyramid2.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_pyramid3.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_pyramid4.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_torus.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_torus1.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_torus2.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_torus3.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_geometry_torus4.xml" value="0.5" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_physics_circular.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_physics_circular1.xml" value="0.67" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Gonzaga_FormulasCalculator/app/src/main/res/layout/fragment_physics_circular2.xml" value="0.33" />
